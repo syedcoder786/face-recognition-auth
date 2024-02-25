@@ -16,7 +16,12 @@
   }
 }
 
-body {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +29,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
 }
+
+#container {
+
+  margin: 0;
+  padding: 0;
+  /* width: 100vw;
+  min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas{
+  position: fixed;
+} 
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+
